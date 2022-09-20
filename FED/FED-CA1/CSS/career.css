@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* set an appropriate font size for the option number text */
+h1.option-number {
+    font-size: 2em;
+    margin-bottom: 0px;
+}
+
+/* set an appropriate font size for the name of the option */
+h2.option-name {
+    font-size: 1.5em;    
+}
+
+/* set the texts on the last column to start from the top instead of the center */
+td[rowspan="3"] {
+    vertical-align: top;
+}
+
+/* set the texts within each list to start from the left instead of the center*/
+td[rowspan="3"] li {
+    text-align: left;
+}
+
+/* resize the icons to their appropriate sizes */
+img.icon {
+    width: 50%;
+}

@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* sets a background image for the whole bedrock of the page */
+html {
+    background-image: url("../images/cosmos-gd39e37a23_1280.png");
+    background-repeat: repeat;
+    background-size: 20%;
+}
+/* Image by <a href="https://pixabay.com/users/mk_al-19145027/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5809271">Mk_al</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5809271">Pixabay</a> */
+
+/* main body */
+/* setting the portrait for the whole body document */
+body {
+    width: 50%;
+    min-width: 940px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    background-color: azure;
+}
+
+/* header and footer */
+/* set the header and footer to be black */
+header, footer {
+    background-color: black;
+    margin-top: 0px;
+}
+
+header > nav, footer > nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header > h1 {
+    color: white;
+    text-decoration: underline;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+header > h2 {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+footer > section{
+    color: white;
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+a:hover {
+    color: white;
+}
+
+table {
+    width: 95%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+
+    border: 2px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+h1.main-text-header {
+    font-size: 2.75em;
+    text-align: center;   
+    margin-bottom: 6px;
+}
+
+p.main-text-paragraph {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul > li {
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+ul.footer_nav > li {
+    padding-top: 1%;
+}
+
+nav > ul > li > a {
+    color: dodgerblue;
+    text-decoration: none;
+    text-decoration-thickness: 5px;
+    font-weight: bold;
+}
+

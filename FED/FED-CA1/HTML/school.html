@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../CSS/background.css">
+    <link rel="stylesheet" href="../CSS/school.css">
+</head>
+
+<body>
+    <!--Header will consists of the navigation bar, my name, and the name of the topic-->
+    <header>
+        <nav>
+            <!--Create an unordered list to display the list of links to all the webpages-->
+            <ul class="header_nav">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="school.html">SP life</a> </li>
+                <li> <a href="career.html">Career options</a> </li>
+                <li> <a href="feedback.html">Feedback</a> </li>
+            </ul>
+        </nav>
+
+        <h1 class="name">Shawn Lim Jun Jie</h1>
+
+        <h2 class="portfolio">Career Portfolio</h2>
+
+    </header>
+
+    <!--The main section will consists of the top section with the text about my SP experience and the remaining section about the SoC courses-->
+    <main>
+
+        <!--This section will simply be a heading and a paragraph about the SP experience-->
+        <section class="top">
+            <h1 class="main-text-header">The SP experience</h1>
+            <p class="main-text-paragraph">
+                In Singapore Polytechnic (SP), we are offered plenty of courses from different domains ranging from engineering, business, computing, to navel.
+                As one of the oldest Polytechnic in Singapore, the campus consists of many old and new buildings, with lessons all taking place in air-conditioned rooms.
+                There are 6 food courts in total with several fast food chains also opened in the campus such as Macdonalds, Starbucks, and KFC.
+                The campus itself is so big that when a person rides an MRT train heading towards the Dover station, the train is still running at its highest speed and is yet to decelerate when
+                the train reach the campus. So far in my expereince in SP, the modules are more or less fine and are not too stressful, even with the Astronomy CCA I joined out of the many CCAs available.
+                As I am currently pursing a course under the School of Computing (SoC), there are a few other courses offered under SoC that are within the field of IT but are still different
+                in terms of the speciality. I am going to give a brief description of what each course under the SoC is about and what I think about them.
+            </p>
+        </section>
+
+        <!--This section will consist of a table with the thead, tbody, and tfooter, with each containing the header, the details on the each course in SoC, and the updated date text respectively-->
+        <section class="bottom">
+            <table>
+                <thead>
+                    <tr>
+                        <!--Colspan 2 is used to span the heading across the all the columns in the first row as a heading-->
+                        <th colspan="2">
+                            <p>Courses offered under School of Computing</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--For the next 4 td, it will consists of the icon for each course, the name of the course, and the text about the course-->
+                    <tr>
+                        <td>
+                            <img src="../images/daaa.jpg" alt="DAAA icon">
+                            <h2 class="course-name">Diploma in Applied AI & Analytics</h2>
+                            <p>
+                                This is the course I am pursuing. It specialises in developing AI application in the real world to solve problems.
+                                We will be learning a lot of AI related concepts such as machine learning, neural networks, and much more.
+                                I believe pursuing this course allows us to enter the job market that is increasing in demand, thereby allowing us to easily get a job with ease.
+                                It is the newest course in SoC, and is one of the 3 speciality in SoC.
+                            </p>
+                        </td>
+                        <td>
+                            <img src="../images/dcitp.jpg" alt="DCITP icon">
+                            <h2 class="course-name">Diploma in Common ICT Programme</h2>
+                            <p>
+                                This course is designed for people who wants to pursue a study in IT but is unsure of what they want exactly.
+                                This course is structured such that students in this course will gain an overview of the world of IT, and they will then have to decide where to go afterwards.
+                                Students will have to choose 1 of the any 3 courses in SoC after the first semester which they will pursue for the rest of their Polytechnic life.
+                                I believe this course is for people who wants to study and work in the field of IT but have no clear idea of their speciality.
+                            </p>
+                        </td>
+                    </tr>
+                    <!--This acts as a new row for the table for the next two courses-->
+                    <tr>
+                        <td>
+                            <img src="../images/dism.jpg" alt="DISM icon">
+                            <h2 class="course-name">Diploma in Infocomm Security Management</h2>
+                            <p>
+                                This course focues on the security of the IT world. Students will develop the softskills and technical skills necessary to safeguard digital information.
+                                Students will learn many key concepts such as cryptopgrahy, networking, digital forensics, and more. They will also experience the simulated cyberattack in the labs.
+                                This course is designed for people who are willing to learn more about cybersecurity and are always willing to figure out ways to attack or defend their systems.
+                                It is also one of the 3 speciality in SoC.
+                            </p>
+                        </td>
+                        <td>
+                            <img src="../images/dit.jpg" alt="DIT icon">
+                            <h2 class="course-name">Diploma in Information Technology</h2>
+                            <p>
+                                This course offers students to learn about the backdrops in the IT world. It is focused on software and applications development. They will then have to pick an elective
+                                to specialise in. They can choose to specialise in software development, user experience, or immersive simulation. The course is mainly on the coding of software
+                                or application. I believe it is for people who mainly wants to do casual software, application, and or web development, and it is one of the 3 speciality in SoC.
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+                <!--The icons are taken from the 2022 Freshmen Orientation Programme slide https://www.sp.edu.sg/docs/default-source/soc/fo-2022-programme---soc-rel1.pdf?sfvrsn=131e35b3_6-->
+                <!--The tfoot will span 2 colspan again and will act as a footer for the whole table to show the updated date text-->
+                <tfoot>
+                    <tr><td colspan="2"><p>Updated on 6 June 2022</p></td></tr>
+                </tfoot>
+            </table>
+
+        </section>
+
+    </main>
+
+    <!--The footer will consists of the same navigation bar as the one in the footer and will contain my contacts-->
+    <footer>
+        <nav>
+            <ul class="footer_nav">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="school.html">SP life</a> </li>
+                <li> <a href="career.html">Career options</a> </li>
+                <li> <a href="feedback.html">Feedback</a> </li>
+            </ul>
+        </nav>
+
+        <!--This contacts section in the footer will consists of my contact details with the appropriate links-->
+        <section id="contacts">
+            <h3>
+                Email: <a href="mailto:SHAWNLIM.22@ichat.sp.edu.sg">SHAWNLIM.22@ichat.sp.edu.sg</a>
+                &#8226;
+                Phone: <a href="tel:+6588570039">8857 0039</a>
+            </h3>
+        </section>
+
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../CSS/background.css">
+    <link rel="stylesheet" href="../CSS/feedback.css">
+</head>
+<body>
+    <!--Header will consists of the navigation bar, my name, and the name of the topic-->
+    <header>
+        <nav>
+            <!--Create an unordered list to display the list of links to all the webpages-->
+            <ul class="header_nav">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="school.html">SP life</a> </li>
+                <li> <a href="career.html">Career options</a> </li>
+                <li> <a href="feedback.html">Feedback</a> </li>
+            </ul>
+        </nav>
+
+        <h1 class="name">Shawn Lim Jun Jie</h1>
+
+        <h2 class="portfolio">Career Portfolio</h2>
+
+    </header>
+
+    <!--The main section will consists of a heading and the form section-->
+    <main>
+        <h1 class="main-text-header">
+            Feedback
+        </h1>
+
+        <section class="form">
+
+            <!--The form section will consists of 2 fieldsets, with each representing the type of data inputs from the user, an asterisk legend, and two buttons-->
+            <form id="feedback" action="*" method="post">
+
+                <!--The personal fieldset will contain the user input on the name, which will be a textbox, email input, as well as phone number-->
+                <fieldset id="personal">
+
+                    <legend>Personal information</legend>
+
+                    <!--The name and email are required. The email has a default built-in validator, while the phone number will have the pattern attribute to validate singapore phone number-->
+                    <div class="name">
+                        <label for="name" class="required">Your name</label>
+                        <input type="text" name="userName" id="name" required>
+                    </div>
+
+                    <div class="email">
+                        <label for="email" class="required">E-mail address</label>
+                        <input type="email" name="userEmail" id="email" required>
+                    </div>
+
+                    <div class="phoneNumber">
+                        <label for="phoneNumber">Phone number (format: xxxx xxxx)</label>
+                        <input type="tel" name="userNumber" id="phoneNumber" pattern="^\d{4} \d{4}$">
+                    </div>
+                
+                </fieldset>
+
+                <!--The opinion website will consist of the actual feedback with the selection input, textarea, checkboxes, and slider-->
+                <fieldset id="opinion">
+
+                    <legend>Feedback on my website</legend>
+                    
+                    <!--The selection input is used to let the user choose his or her favourite page-->
+                    <div class="bestPage">
+                        <label for="bestPage">What is your favourite page?</label> <br>
+                        <select name="favouritePage" id="bestPage">
+                            <option value="none">None</option>
+                            <option value="index">Home page</option>
+                            <option value="school">SP Life page</option>
+                            <option value="career">Career Options page</option>
+                            <option value="feedback">Feedback page</option>
+                        </select>
+                    </div>
+
+                    <!--A textarea for the user to elaborate-->
+                    <div class="bestPageText">
+                        <label for="bestPageText">What do you like about the page you selected?</label> <br>
+                        <textarea name="favouritePageReason" id="bestPageText" cols="10" rows="3"></textarea>
+                    </div>
+
+                    <!--The checkboxes is used to let user pick the pages that need improvement-->
+                    <div class="badPages">
+                        <label>Which page(s) need(s) any improvement?</label> <br>
+                        <div id="checkboxes">
+                            <input type="checkbox" name="home" id="home" value="index"> <label for="home">Home</label> <br>
+                            <input type="checkbox" name="school" id="school" value="school"> <label for="school">SP Life</label> <br>
+                            <input type="checkbox" name="career" id="career" value="career"> <label for="career">Career Options</label> <br>
+                            <input type="checkbox" name="feedback" id="feedbackCheckBox" value="feedback"> <label for="feedbackCheckBox">Feedback</label>
+                        </div>
+                        
+                    </div>
+
+                    <!--The textarea is used for users to explain-->
+                    <div class="badPagesText">
+                        <label for="badPagesText">Explain how I can improve on my website</label> <br>
+                        <textarea name="badPagesReason" id="badPagesText" cols="10" rows="3"></textarea>
+                    </div>
+
+                    <!--The slider is used to let the users rate the website-->
+                    <div class="rating">
+                        <label for="rating">Rate my website</label>
+                        <div>
+                            <input type="range" name="rating" id="rating" min="1" max="5" step="1"> 
+                            <p>&nbsp;1 &nbsp;&nbsp;&nbsp; 2 &nbsp;&nbsp;&nbsp; 3 &nbsp;&nbsp;&nbsp; 4 &nbsp;&nbsp;&nbsp; 5</p>
+                        </div>                        
+                    </div>
+
+                    <!--A final textarea for users to comment-->
+                    <div class="commentsText">
+                        <label for="comments">Any comments?</label> <br>
+                        <textarea name="comment" id="comments" cols="10" rows="3"></textarea>
+                    </div>
+                    
+                </fieldset>
+
+                <!--A legend for users to know that an asterisk on the text indicates it is a mandatory input-->
+                <div id="asterisk_legend">
+                    <p> denotes required input</p>
+                </div>
+
+                <!--Two buttons, a submit button and a reset button-->
+                <div id="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!--The footer will consists of the same navigation bar as the one in the footer and will contain my contacts-->
+    <footer>
+        <nav>
+            <ul class="footer_nav">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="school.html">SP life</a> </li>
+                <li> <a href="career.html">Career options</a> </li>
+                <li> <a href="feedback.html">Feedback</a> </li>
+            </ul>
+        </nav>
+
+        <!--This contacts section in the footer will consists of my contact details with the appropriate links-->
+        <section id="contacts">
+            <h3>
+                Email: <a href="mailto:SHAWNLIM.22@ichat.sp.edu.sg">SHAWNLIM.22@ichat.sp.edu.sg</a>
+                &#8226;
+                Phone: <a href="tel:+6588570039">8857 0039</a>
+            </h3>
+        </section>
+
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* form section */
+/* set a font size for all the text inside the form and adjust the layout such that it is not full-sized and centered within the body */
+section.form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    max-width: 900px;
+    font-size: 1.25em;
+}
+
+/* separate out all the elements inside the form by a larger amount of gap */
+section.form > form#feedback > * {
+    margin-top: 25px;
+}
+
+/* styling on the fieldsets to make the outline of the fieldsets visible */
+section.form > form#feedback > fieldset {
+    color: black;
+}
+
+/* styling on the fieldset legends */
+section.form > form#feedback > fieldset > legend {
+    padding: 5px;
+    outline: rgb(121, 121, 121) solid 1px;
+    border-radius: 5px;
+}
+
+/* setting a two column layout on the personal info fieldset */
+section.form > form#feedback > fieldset#personal > div {
+    display: grid;
+    grid-template-columns: auto 325px;
+    margin-top: 7px;
+}
+
+/* setting a one column layout on the feedback on my website fieldset */
+section.form > form#feedback > fieldset#opinion > div {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 10px;
+}
+
+/* add an asterisk after each label element that requires user input and before the text " denotes required input" to indicate the meaning of the asterisk*/
+section.form label.required::after, div#asterisk_legend > p::before{
+    content: "*";
+    color: red;
+}
+
+/* only allow the textarea to adjust vertically */
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+/* adjust the numbers below the slider closer to the slider itself */
+div.rating > div > * {    
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* styling on the buttons to make them bigger and space them out */
+section.form > form#feedback > div#buttons > * {
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 17%;
+    margin-right: 17%;
+}

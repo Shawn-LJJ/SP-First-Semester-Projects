@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* adjust the font size for the header in the thead table */
+thead {
+    font-size: 2.5em;
+}
+
+/* adjust the font size in the header within the td */
+td > h2 {
+    font-size: 2em;
+}
+
+/* decorate the course name text within each td */
+h2.course-name {
+    font-size: 1.5em;
+    text-decoration: underline;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+/* resize the icons */
+tbody img {
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 100px;
+}
+
+/* make sure the text do not touch the border */
+td > p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* leave little space in the tfoot */
+tfoot * {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* make the text in the tfoot go to the right */
+tfoot p {
+    text-align: right;
+}
